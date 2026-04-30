@@ -1,16 +1,16 @@
-## Resource Group & Lock Configuration
+### Resource Group & Lock Configuration
 
 Resource Groupt Overview:
 1. Name: RG-Cyberportfolio-Prod
 2. Region: South Afica North
 3. Purpose: It will contain all resources for this lab. It also makes it easy to manage the project as one can delete the whole folder later to wipe everything out at once.
 
-## Steps to create Resource group:
+### Steps to create Resource group:
 1. Logged into an Azure account
 2. Clicked on Azure CLI. Two options were provided: Bash and Powershell. Chose Bash as it is the kernel I am most familiar with.
 3. I then enterned the command to create the resource group, name it, choose its region, and create, as shown on the screenshot below:
 
-![Resource group and Lock](/images/rg-creation.png)
+
 
 
 
