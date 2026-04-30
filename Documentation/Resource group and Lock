@@ -10,7 +10,7 @@ Resource Groupt Overview:
 2. Clicked on Azure CLI. Two options were provided: Bash and Powershell. Chose Bash as it is the kernel I am most familiar with.
 3. I then enterned the command to create the resource group, name it, choose its region, and create, as shown on the screenshot below:
 
-![Resource group and Lock](../images/rg-creation.png)
+![Resource group and Lock](/images/rg-creation.png)
 
 
 
