@@ -97,7 +97,7 @@ In summary, Port 80 was opened to strictly facilitate a 301 Redirect to Port 443
 
 <br>
 <br>
-Since the only Ports allowed to access the network are Port 80 and 443 to allow the public to access my portfolio, SSH needs to be allowed to allow me as the owner to manage my resource. If SSH is not enabled, I am basically locked out as the administrator/owner of the assets.
+Since the only Ports allowed to access the network are Port 80 and 443 for the public, SSH needs to be enabled to allow me as the owner to manage my resources. If SSH is not enabled, I am basically locked out of my network.
 
 **Command used to enable SSH:**
 ```bash
