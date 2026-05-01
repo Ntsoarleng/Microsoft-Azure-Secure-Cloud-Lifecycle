@@ -12,6 +12,7 @@ The output was:
 <img width="687" height="100" alt="rg-check" src="https://github.com/user-attachments/assets/ca7d9c02-931a-43bb-a31e-1987e3b5de19" />
 
 
+
 **Command used to confirm that the lock was still in place and configured correctly:**
 
 ```bash
@@ -21,6 +22,7 @@ az lock list --resource-group RG-Cyberporfolio-Prod --output table
 Result:
 
 <img width="764" height="77" alt="lock-confirmation" src="https://github.com/user-attachments/assets/f9c844a0-b5af-4fe1-9998-ef04ff44b886" />
+
 
 
 Now that I was sure that the resources I created were still in place, I could then go on to configure the VNet, Subnet and NSG resources.
