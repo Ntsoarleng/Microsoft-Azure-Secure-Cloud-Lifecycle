@@ -95,6 +95,25 @@ By default, browsers try to connect via HTTP (Port 80) first. If Port 80 is clos
 
 In summary, Port 80 was opened to strictly facilitate a 301 Redirect to Port 443. This ensures a seamless user experience (UX) while enforcing encryption in transit as the mandatory standard for all traffic, satisfying both usability and security requirements.
 
+<br>
+<br>
+Since the only Ports allowed to access the network are Port 80 and 443 to allow the public to access my portfolio, SSH needs to be allowed to allow me as the owner to manage my resource. If SSH is not enabled, I am basically locked out as the administrator/owner of the assets.
+
+**Command used to enable SSH:**
+```bash
+az network nsg rule create --resource-group RG-Cyberportfolio-Prod --nsg-name NSG-Web-Secure --name AllowRestrictedSSH --priority 110 --source-address-prefixes <YOUR-IP>/32 --destination-port-ranges 22 --access Allow --protocol Tcp --description "Allow SSH only from my home IP for management."
+```
+
+Result showing successful configuration without any errors:
+
+<img width="1600" height="480" alt="ssh-enablement" src="https://github.com/user-attachments/assets/ff46a926-da0d-4109-9f81-523c944b273a" />
+
+<br>
+
+Because SSH gives one "Root" (total) control over the server, it is the number 1 target for hackers. This is why I only restricted it to my IP address. The /32 restricts it to the provided IP address, if Azure NSG sees an IP that wasn't the provided, it will drop the connection entrirely.
+
+In summary, network traffic was segmented into two planes: The data plane (Port 80/443) for public access, and the Management plane (Port 22) for administrative tasks. The management plane was secured via IP-whitelisting to eliminate the attack surface for unauthorized SSH attempts.
+
 
 
 
