@@ -1,6 +1,6 @@
 ## Resource Group and Lock Configuration
 
-### Resource Groupt Overview:
+### Resource Group Overview:
 1. Name: RG-Cyberportfolio-Prod
 2. Region: South Africa North
 3. Purpose: It will contain all resources for this lab. It also makes it easy to manage everything within the project as one can delete the whole folder later to wipe everything out at once.
