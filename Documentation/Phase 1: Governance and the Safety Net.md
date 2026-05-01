@@ -1,4 +1,4 @@
-## Resource Group & Lock Configuration
+## Resource Group and Lock Configuration
 
 ### Resource Groupt Overview:
 1. Name: RG-Cyberportfolio-Prod
