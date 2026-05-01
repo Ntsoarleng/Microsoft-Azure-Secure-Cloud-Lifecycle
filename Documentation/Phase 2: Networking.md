@@ -27,6 +27,7 @@ Result:
 
 Now that I was sure that the resources I created were still in place, I could then go on to configure the VNet, Subnet and NSG resources.
 Think of it like checking your mirrors before you start driving a car. You know that they were there yesterday, but checking again takes 2 seconds and prevents a massive accident. This is why it is always important to confirm that the resources/assets that were created are still in place and configured properly.
+<br>
 
 ### Vnet and Subnet Overview
 **Command used to create the Vnet and Subnet is:**
@@ -51,8 +52,9 @@ What the command does is:
 In Azure, networking is hierarchical. Creating the VNet and Subnet in a single command is a clean way to build the entire network foundation at once, ensuring that specific IP address ranges are mapped correctly from the start and prevent misconfigurations, which is one of the most critical cybersecurity vulnerabilities according to OWASP Top 10 2025. If there was a need, one might also have one subnet for a Web Server and a different, more restricted subnet for a Database. 
 
 By doing this configuration in one go, my network environment is instantly ready for the Compute (VM) phase.
+<br>
 
-# Network Security Group (NSG) Overview:
+### Network Security Group (NSG) Overview:
 
 The NSG is essentially the cloud firewall, it defines the rules of engagement of who can interact with the reosurces within the resource group.
 
@@ -65,6 +67,7 @@ az network nsg create --resource-group RG-Cyberportfolio-Prod --name NSG-Web-Sec
 To show successful configuration, the below was output, and there was no error:
 
 <img width="1584" height="603" alt="nsg-creation" src="https://github.com/user-attachments/assets/8a470d2f-5341-4f69-9e38-fad2d423d5cc" />
+<br>
 
 The NSG was also created inside the resource group, its name: NSW-Web-Secure, and located in the southafricanorth region. This is consistent with the purpose of the project.
 
