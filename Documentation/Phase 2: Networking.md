@@ -26,9 +26,10 @@ Result:
 <br>
 
 Now that I was sure that the resources I created were still in place, I could then go on to configure the VNet, Subnet and NSG resources.
-Think of it like checking your mirrors before you start driving a car. You know that they were there yesterday, but checking again takes 2 seconds and prevents a massive accident. This is why it is always important to confirm that the resources/assets that were created are still there and configured properly.
+Think of it like checking your mirrors before you start driving a car. You know that they were there yesterday, but checking again takes 2 seconds and prevents a massive accident. This is why it is always important to confirm that the resources/assets that were created are still in place and configured properly.
 
 ### Vnet and Subnet Overview:
+1. 
 
 
 
