@@ -1,6 +1,6 @@
 ## VNet, Subnet, and NSG Configuration
 
-First, I had to conform that the work from phase 1 was still there and not wiped when the previous session expired. This is to ensure environmental consistency, as everything in this project will be built inside the resource group, and prevent resource sprawl.
+First, I had to confirm that the work from phase 1 was still there and not wiped when the previous session expired. This is to ensure environmental consistency, as everything in this project will be built inside the resource group, and prevent resource sprawl.
 
 **Command used to check if the resource group was still in place:**
 ```bash
