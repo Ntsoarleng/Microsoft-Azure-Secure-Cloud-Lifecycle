@@ -17,6 +17,7 @@ And the result was:
 
 <img width="1159" height="286" alt="rg-creation" src="https://github.com/user-attachments/assets/9c5c0e02-e414-4562-a1e5-437787591628" />
 
+
 Next, creating a lock.
 
 ### Lock Overview:
