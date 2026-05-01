@@ -1,6 +1,6 @@
 ## VNet, Subnet, and NSG Configuration
 
-First, I had to confirm that the work from phase 1 was still there and not wiped when the previous session expired. This is to ensure environmental consistency, as everything in this project will be built inside the resource group, and prevent resource sprawl.
+Firstly, I had to confirm that the work from phase 1 was still there and not wiped when the previous session expired. This is to ensure environmental consistency, as everything in this project will be built inside the resource group, and prevent resource sprawl.
 
 **Command used to check if the resource group was still in place:**
 ```bash
@@ -51,6 +51,36 @@ What the command does is:
 In Azure, networking is hierarchical. Creating the VNet and Subnet in a single command is a clean way to build the entire network foundation at once, ensuring that specific IP address ranges are mapped correctly from the start and prevent misconfigurations, which is one of the most critical cybersecurity vulnerabilities according to OWASP Top 10 2025. If there was a need, one might also have one subnet for a Web Server and a different, more restricted subnet for a Database. 
 
 By doing this configuration in one go, my network environment is instantly ready for the Compute (VM) phase.
+
+# Network Security Group (NSG) Overview:
+
+The NSG is essentially the cloud firewall, it defines the rules of engagement of who can interact with the reosurces within the resource group.
+
+**Command used to create NSG:**
+```bash
+az network nsg create --resource-group RG-Cyberportfolio-Prod --name NSG-Web-Secure --location southafricanorth
+```
+<br>
+
+To show successful configuration, the below was output, and there was no error:
+
+<img width="1584" height="603" alt="nsg-creation" src="https://github.com/user-attachments/assets/8a470d2f-5341-4f69-9e38-fad2d423d5cc" />
+
+The NSG was also created inside the resource group, its name: NSW-Web-Secure, and located in the southafricanorth region. This is consistent with the purpose of the project.
+
+After creating the NSG, Azure blocks all incoming traffic from the internet by default. Inbound rules need to be created to "Allow" Port 80/443 so visitors can see my portfolio.
+
+**Command used to allow web traffic into the network:**
+```bash
+az network nsg rule create --resource-group RG-Cyberportfolio-Prod --nsg-name NSG-Web-Secure --name AllowWebRedirect --priority 100 --destination-ranges 80 443 --access Allow --protocol Tcp
+```
+<br>
+
+The result to show successful configuration without any error:
+
+<img width="1580" height="452" alt="allow web-traffic" src="https://github.com/user-attachments/assets/9ef1ba9c-76e3-417e-b196-68c6026d1a9a" />
+
+
 
 
 
