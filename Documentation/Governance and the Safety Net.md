@@ -22,7 +22,7 @@ Next, creating a lock.
 ### Lock Overview:
 1. Name: Lock-PreventDelete
 2. Asociated resource group: RG-Cyberportfolio-Prod
-3. Lock type: Givens a brief description of what the lock does: CanNotDelete
+3. Lock type: Gives a brief description of what the lock does: CanNotDelete
 4. Purpose: It is a "safety pin". This tells Azure that even if one accidentally clicks delete, it should not let it happen, thus wiping everything within the resource group. This is a key Governance skill for the AZ-900.
 
 **Command used to create the lock:**
