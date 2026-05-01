@@ -42,15 +42,15 @@ The output showing successful configuration was:
 What the command does is:
 1. It defines a vnet network to be created inside the resource group, RG-Cyberportfolio-Prod.
 2. It then assigns a name to this network, Vnet-Portfolio.
-3. It specifies the location of the datacenter in which it is going to live and comply to governance of that region, i.e POPIA. Note that since the Vnet it is inside the resource group whose location was already configured and was also southafricanorth, this means that every resource that gets put into this resource group inherits the location in which it is housed. However, as a best practice, resources must be configuured fully and explicitly even if there is an implicit inheritance in place. This is to prevent any mistakes and misconfigurations that could creep in as we progress.
-4. The address prefix used for the Vnet, 10.0.0.0/16, defines the boundaries of the entire private network. The /16 means there are 65 536 available IP addresses, from 10.0.0.0 to 10.0.255.255.
+3. It specifies the location of the datacenter in which the VNet and Subnet are going to live and comply to Governance of that region, i.e POPIA. Note that since the VNet is inside the resource group whose location was also already configured to southafricanorth, this means that every resource that gets put into this resource group inherits the location in which it is housed. However, as a best practice, one must ensure that resources are configured fully and explicitly even if there is an implicit inheritance in place. This is to prevent any mistakes and misconfigurations that might creep in as we progress.
+4. The address prefix used for the VNet, 10.0.0.0/16, defines the boundaries of the entire private network. The /16 means there are 65 536 available IP addresses, from 10.0.0.0 to 10.0.255.255.
 5. In the same breadth, the subnet that will house my particular Virtual Machine was created. The subnet name is Subnet-Web with subnet-prefix, 10.0.1.0/24. The /24 gives 256 addresses, from 10.0.1.0 to 10.0.1.255.
 
 <br>
 
-In Azure, networking is hierarchical. Creatin the VNet and Subnet in a single command is a clean way to build the entire network foundation at once, ensuring that specidic IP address ranges are mapped correctly from the start and prevent misconfigurations, which is one of the most critical cybersecurity vulnerabilities according to OWASP Top 10. If there was a need, one might have one subnet fora Web Server and a different, more restricted subnet for a Database. 
+In Azure, networking is hierarchical. Creating the VNet and Subnet in a single command is a clean way to build the entire network foundation at once, ensuring that specific IP address ranges are mapped correctly from the start and prevent misconfigurations, which is one of the most critical cybersecurity vulnerabilities according to OWASP Top 10 2025. If there was a need, one might also have one subnet for a Web Server and a different, more restricted subnet for a Database. 
 
-By doing this configuration in one go, the my network environment is instantly ready for the Compute (VM) phase.
+By doing this configuration in one go, my network environment is instantly ready for the Compute (VM) phase.
 
 
 
