@@ -17,6 +17,23 @@ And the result was:
 
 <img width="1159" height="286" alt="rg-creation" src="https://github.com/user-attachments/assets/9c5c0e02-e414-4562-a1e5-437787591628" />
 
+Next, creating a lock.
+
+### Lock Overview:
+1. Name: Lock-PreventDelete
+2. Asociated resource group: RG-Cyberportfolio-Prod
+3. Lock type: Givens a brief description of what the lock does: CanNotDelete
+4. Purpose: It is a "safety pin". This tells Azure that even if one accidentally clicks delete, it should not let it happen, thus wiping everything within the resource group. This is a key Governance skill for the AZ-900.
+
+**Command used to create the lock:**
+```bash
+az lock create --name Lock-PreventDelete --resource-group RG-Cyberportfolio-Prod --lock-type CanNotDelete
+```
+The result:
+
+<img width="1282" height="209" alt="lock" src="https://github.com/user-attachments/assets/52efd7bf-0725-4897-9477-d0d0843724e2" />
+
+
 
 
 
