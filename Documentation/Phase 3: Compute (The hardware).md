@@ -1,6 +1,6 @@
 ## Virtual Machine (VM) Configuration
 
-As a best practice, before going on to create the virtual machine, I need to ensure that resources from Phase 2 are still existent and conigured properly. This is to ensure that the previous expired session did not wipe everything out that was created within that session, and again, to prevent resource sprawl.
+As a best practice, before going on to create the virtual machine, I need to ensure that resources from Phase 2 are still existent and configured properly. This is to ensure that the previous expired session did not wipe everything out that was created within that session, and again, to prevent resource sprawl.
 
 **Commands used to confirm that the VNet and Sutnet were still in place:**
 ```bash
@@ -22,7 +22,7 @@ The VNet and Subnet were configured correctly and still in place.
 
 ### Virtual Machine(VM) Overview:
 
-Now to create a virtual machine in the subnet,
+To create THE virtual machine in the Subnet,
 
 **Command used:**
 ```bash
@@ -42,7 +42,7 @@ The result:
 
 An ERROR!
 
-To troubleshoot, since free slots in datacenters normally run out, I tried a different VM size while keeping the rest of the command intact.
+To troubleshoot: since free slots in datacenters normally run out, I tried a different VM size while keeping the rest of the command intact.
 
 **Command used:**
 ```bash
@@ -55,7 +55,7 @@ The result:
 
 <br>
 
-The VM was successfully created. It means that the Standard_B2s slot server was full in the datacenter, and Standard_DS1_v2 still had an empty slot to hold my VM.
+The VM was successfully created. It means that the Standard_B2s slot server was full in the datacenter, and Standard_DS1_v2 still had an empty slot to "house" the VM.
 
 
 After creating any asset/resource, it is always best to check if it works as intended to avoid Security incidents later. 
@@ -71,7 +71,7 @@ The result:
 
 <br>
 
-The connection timed out. This means that the connection I tried to make was ignored by the firewall (the NSG), dropped it silently. This means that there was an IP Address mismatch since the NSG in phase 2 of the project was only allowed to take requests from my physical laptop's IP address. 
+The connection timed out. This means that the connection I tried to make was ignored by the firewall (the NSG), dropped it silently. This means that there was an IP Address mismatch since the NSG rule in Phase 2 of the project was only allowed to take requests from my physical laptop's IP address. 
 
 To make sure that I was troubleshooting this matter correctly, I used a command within the Azure CLI terminal to check the machine's IP Address.
 **Command used:**
@@ -80,9 +80,9 @@ curl ifconfig.me
 ```
 
 The IP Address that was returned was entirely different from the one I used to configure the NSG rules in Phase 2. A mistake was made.
-Since the project is built in the Azure CLI entirely, there was no need for me to use my physical laptop's IP Address, I had to use that of the server, Azure Cloud Shell hosting my terminal.
+Since the project is built in the Azure CLI entirely, there was no need for me to use my physical laptop's IP Address, I had to use that of the server, Azure Cloud Shell, hosting my terminal.
 
-Therefore, I need to update the NSG rules by whitelisting my specific Cloud Shell IP.
+Therefore, I needed to update the NSG rules by whitelisting my specific Cloud Shell IP.
 <br>
 **Command used:**
 ```bash
@@ -95,7 +95,8 @@ The result:
 
 <br> 
 
-The NSG rule have theen updated and the only IP Address whitelisted to make requests is the one that hosts my terminal, the Azure Cloud Shell. Now to check if I can SSH into the VM after this update,
+The NSG rule was updated and the only IP Address that was "Allowed" to make requests was the one hosting my terminal, the Azure Cloud Shell. To check if I could SSH into the VM after this update,
+<br>
 **Command used:**
 ```bash
 ssh azureuser@40.123.244.120
@@ -106,7 +107,7 @@ The result:
 
 <br>
 
-The SSH connection was successful!
+The SSH connection succeded!
 
 One important factor to note is that Cloud Shell IPs are dynamic, meaning they can change, and are not always volatile, meaning that they change every second or everytime the current session expires. This means that even if a session expires, Microsoft doesn't always delete your container immediately.
 
