@@ -33,5 +33,25 @@ What the command does:
 2. Admin username: azureuser
 3. Operating system of the virtual machine: Ubuntu v22.04
 4. Size: Standard_B2s. This is the normal Free Tier slot VM size in a southafricanorth, Johannesburg datacenter.
-5. --generate-sh-keys tells Azure to hadle the "Identity" of the server for me automatically. It creates a private and a public key. The public key is stored inside the VM in a file called authorized_keys, and the private key is saved on the local machine (usually in ~/.ssh/id_rsa). The are normally referred to as the 'Lock' and 'Physical key' respectively. Setting this up is better than having a password that can be brute-forced. It ensures that even if someone steals my username, they cannot get in without my physical private key file.
+5. --generate-ssh-keys tells Azure to handle the "Identity" of the server for me automatically. It creates a private and a public key. The public key is stored inside the VM in a file called authorized_keys, and the private key is saved on the local machine (usually in ~/.ssh/id_rsa). They are normally referred to as the 'Lock' and 'Physical key' respectively. Setting this up is better than having a password that can be brute-forced. It ensures that even if someone steals my username, they cannot get in without my physical private key file.
 6. --public-ip-sku Standard ensures that the VM's Public IP does not change everytime one stops and starts the machine. It maintains the static IP address, providing consistent connectivity for the portfolio's web traffic.
+
+The result:
+<img width="1600" height="597" alt="vm initial error" src="https://github.com/user-attachments/assets/b2c96a36-88ca-4f2c-98ee-7f80250b8d2f" />
+<br>
+
+An ERROR!
+
+To troubleshoot, since free slots in datacenters normally run out, I tried a different VM size, while keeping the rest of the command intact.
+
+**Command used:**
+```bash
+az vm create --resource-group RG-Cyberportfolio-Prod --name VM-Portfolio-Web --image Ubuntu2204 --size Standard_DS1_v2 --admin-username azureuser --vnet-name VNet-Portfolio --subnet Subnet-Web --nsg NSG-Web-Secure --generate-ssh-keys --public-ip-sku Standard
+```
+
+The result:
+
+<img width="1600" height="290" alt="vm creation" src="https://github.com/user-attachments/assets/cfa29011-a7b1-4ed1-9c0a-262ddcb1e468" />
+
+The VM was successfully created. It means that the Standard_B2s slot server was full in the datacenter, and Standard_DS1_v2 still had an empty slot to hold my VM.
+
