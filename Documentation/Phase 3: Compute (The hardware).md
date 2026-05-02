@@ -83,6 +83,7 @@ The IP Address that was returned was entirely different from the one I used to c
 Since the project is built in the Azure CLI entirely, there was no need for me to use my physical laptop's IP Address, I had to use that of the server, Azure Cloud Shell hosting my terminal.
 
 Therefore, I need to update the NSG rules by whitelisting my specific Cloud Shell IP.
+<br>
 **Command used:**
 ```bash
 az network nsg rule update --resource-group RG-Cybersecurity-Prod --nsg-name NSG-Web-Secure --name AllowRestrictedSSH --source-address-prefixes 172.201.33.160/32
