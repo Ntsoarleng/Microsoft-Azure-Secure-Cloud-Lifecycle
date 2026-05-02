@@ -53,5 +53,22 @@ The result:
 
 <img width="1600" height="290" alt="vm creation" src="https://github.com/user-attachments/assets/cfa29011-a7b1-4ed1-9c0a-262ddcb1e468" />
 
+<br>
+
 The VM was successfully created. It means that the Standard_B2s slot server was full in the datacenter, and Standard_DS1_v2 still had an empty slot to hold my VM.
+
+
+After creating any asset/resource, it is always best to check if it works as intended to avoid Security incidents later. 
+
+Now that I had a publicIPAddress to the newly created virtual machine, I went ahead and tried to ssh into it.
+
+**Command used:**
+```bash
+ssh azureuser@40.123.244.120
+```
+The result:
+<img width="1055" height="119" alt="1st vm ssh" src="https://github.com/user-attachments/assets/08c3f10a-4471-4c0e-9540-d8f86ce2e487" />
+
+<br>
+
 
