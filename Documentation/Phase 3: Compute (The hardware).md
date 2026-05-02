@@ -16,4 +16,22 @@ The results:
 
 <br>
 
-The VNet and Subnet were configured correctly and still in place
+The VNet and Subnet were configured correctly and still in place.
+<br>
+<br>
+
+### Virtual Machine(VM) Overview:
+
+Now to create a virtual machine in the subnet,
+
+**Command used:**
+```bash
+az vm create --resource-group RG-Cyberportfolio-Prod --name VM-Portfolio-Web --image Ubuntu2204 --size Standard_B2s --admin-username azureuser --vnet-name VNet-Portfolio --subnet Subnet-Web --nsg NSG-Web-Secure --generate-ssh-keys --public-ip-sku Standard
+```
+What the command does:
+1. It creates the virtual machine inside the Subnet, within the resource group, VNet and NSG.
+2. Admin username: azureuser
+3. Operating system of the virtual machine: Ubuntu v22.04
+4. Size: Standard_B2s. This is the normal Free Tier slot VM size in a southafricanorth, Johannesburg datacenter.
+5. --generate-sh-keys tells Azure to hadle the "Identity" of the server for me automatically. It creates a private and a public key. The public key is stored inside the VM in a file called authorized_keys, and the private key is saved on the local machine (usually in ~/.ssh/id_rsa). The are normally referred to as the 'Lock' and 'Physical key' respectively. Setting this up is better than having a password that can be brute-forced. It ensures that even if someone steals my username, they cannot get in without my physical private key file.
+6. --public-ip-sku Standard ensures that the VM's Public IP does not change everytime one stops and starts the machine. It maintains the static IP address, providing consistent connectivity for the portfolio's web traffic.
