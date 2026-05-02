@@ -42,7 +42,7 @@ The result:
 
 An ERROR!
 
-To troubleshoot, since free slots in datacenters normally run out, I tried a different VM size, while keeping the rest of the command intact.
+To troubleshoot, since free slots in datacenters normally run out, I tried a different VM size while keeping the rest of the command intact.
 
 **Command used:**
 ```bash
