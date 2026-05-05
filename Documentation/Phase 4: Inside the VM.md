@@ -31,8 +31,8 @@ Result:
 <img width="1285" height="309" alt="apt update" src="https://github.com/user-attachments/assets/7483c961-a660-41fa-9d72-4ac36e2eb5a2" />
 
 <br>
-One the server sussessfully refreshed, I installed the LAMP Stack.
-
+Once the server sussessfully refreshed, I installed the LAMP Stack.
+<br>
 **Command used:**
 ```bash
 sudo apt install aoache2 mysql-server php libapache2-mod-php php-mysql -y
