@@ -37,9 +37,9 @@ Once the server sussessfully refreshed, I installed the LAMP Stack.
 
 **Command used:**
 ```bash
-sudo apt install aoache2 mysql-server php libapache2-mod-php php-mysql -y
+sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql -y
 ```
-What the command does:
+The command intalls:
 1. Linux (Ubuntu 22.04): the secure, stable operating system acting as the base.
 2. Apache: The web server software that handles requests from the internet and delivers my portfolio content to the user's browser.
 3. MySQL: The database management system. It acts like the brain where all my site's data is organized and stored.
