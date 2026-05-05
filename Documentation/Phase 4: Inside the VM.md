@@ -42,7 +42,7 @@ sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql -y
 The command intalls:
 1. Linux (Ubuntu 22.04): the secure, stable operating system acting as the base.
 2. Apache: The web server software that handles requests from the internet and delivers my portfolio content to the user's browser.
-3. MySQL: The database management system. It acts like the brain where all my site's data is organized and stored.
+3. MySQL: The database management system. It acts like the brain where all my site's data will be organized and stored.
 4. PHP: The programming language that connects the previous three. It fetches data from the MySQL database and hands it to Apache to display on the screen.
 
 I utilized the LAMP stack to transition from a managed service (WordPress.com) to a self-hosted environment, giving me full control over the security configurations and backend management.
