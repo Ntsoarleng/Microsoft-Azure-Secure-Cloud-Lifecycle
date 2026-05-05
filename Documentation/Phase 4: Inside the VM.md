@@ -50,8 +50,9 @@ I utilized the LAMP stack to transition from a managed service (WordPress.com) t
 Result:
 
 <img width="1600" height="610" alt="LAMP install" src="https://github.com/user-attachments/assets/3176fa60-f8da-4e49-bbd1-92aab6aa2f79" />
+<br>
 
-The LAMP Stack was installed successfully. To confirm this, I went to a new tab on web browser and pasted the public IP Address of my virtual machine.
+The LAMP Stack successfully installed. To confirm this, I went to a new tab on web browser and pasted the public IP Address of my virtual machine.
 
 Returned page:
 
