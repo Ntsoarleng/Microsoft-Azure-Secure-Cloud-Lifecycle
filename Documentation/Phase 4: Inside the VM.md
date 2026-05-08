@@ -111,7 +111,7 @@ The database and its permissions were configured successfully.
 
 <br>
 
-### Migration Preparation
+### Migration Prep
 
 Here, I configured the wp-config.php file with restricted credentials. I downloaded the application and linked it to the infrastructure. It is baically like building the pipes before turning on the water.
 
@@ -179,6 +179,50 @@ The modifications I made on the aboce screenshot:
 3. DB_PASSWORD = CyberSecure_99!.
 
 I then exited the nano editor by pressing CTRL + O, Enter, CTRL + X.
+
+Lastly, to do security hardening, I set permissions.
+
+**Commands used:**
+```bash
+sudo chown -R www-data:www-data /var/www/html/
+```
+```bash
+sudo systemctl restart apache2
+```
+
+After this, I could then go to the web browser, put the public IP Address of the virtual machine, and it had to show the home page of the Wordpress application. However, that was not so. Instead, the default page of apache2 still showed:
+
+<img width="1600" height="813" alt="apache default page" src="https://github.com/user-attachments/assets/a3cdfbce-2773-4140-b37d-27cd716c64fa" />
+
+<br>
+
+This happened because Apache2 is configured to prioritize index.html over index.php. The default Ubuntu istallation includes a placeholder index.html which took precedence over the WoordPress core files. 
+
+I therefore listed all the files in that directory using the command:
+```bash
+ls -l
+```
+
+At seeing that the second file that was listed after index.html was index.php, I removed index.html using the command:
+```bash
+sudo rm /var/www/html/index.html
+```
+
+This forced the web server to resolve the index.php file and initiate index.php.
+
+<img width="1287" height="500" alt="removing index html" src="https://github.com/user-attachments/assets/32c73f19-c481-46aa-873b-4977f15a1de9" />
+
+<br>
+
+I restarted apache2 again, and the result was:
+
+<img width="1600" height="726" alt="wordpress configured" src="https://github.com/user-attachments/assets/3f7ac9a6-b5fc-4361-9a95-010586158ca6" />
+
+<br>
+
+The infrastructure to perform the WordPress website migration was successfully configured!
+
+
 
 
 
