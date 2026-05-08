@@ -199,20 +199,22 @@ After this, I could then go to the web browser, put the public IP Address of the
 This happened because Apache2 is configured to prioritize index.html over index.php. The default Ubuntu istallation includes a placeholder index.html which took precedence over the WoordPress core files. 
 
 I therefore listed all the files in that directory using the command:
+
 ```bash
 ls -l
 ```
 
+<img width="1287" height="500" alt="removing index html" src="https://github.com/user-attachments/assets/32c73f19-c481-46aa-873b-4977f15a1de9" />
+
+<br>
+
 At seeing that the second file that was listed after index.html was index.php, I removed index.html using the command:
+
 ```bash
 sudo rm /var/www/html/index.html
 ```
 
 This forced the web server to resolve the index.php file and initiate index.php.
-
-<img width="1287" height="500" alt="removing index html" src="https://github.com/user-attachments/assets/32c73f19-c481-46aa-873b-4977f15a1de9" />
-
-<br>
 
 I restarted apache2 again, and the result was:
 
