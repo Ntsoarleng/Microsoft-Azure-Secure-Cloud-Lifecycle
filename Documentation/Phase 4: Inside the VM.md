@@ -68,7 +68,7 @@ NOTE: upon accessing the VM's Public IP, the browser correctly flags the connect
 
 ### Setting up the Database
 
-Here the MySQL database wordpress_db is provisioned to serve as the centralized repository for all the site metadata. This architectural choice supports Data Persisitence and allows for all site metadata and allows for granular Access Control Management by isolating application data from system-level database tables.
+Here the MySQL database wordpress_db is provisioned to serve as the centralized repository for all the site metadata. This architectural choice supports Data Persistence and allows for granular Access Control Management by isolating application data from system-level database tables.
 
 **Command used to crate the database:**
 ```bash
@@ -93,7 +93,7 @@ To save the changes,
 
 **Command used:**
 ```bash
-FLUSH PRIVILEGES
+FLUSH PRIVILEGES;
 ```
 
 To confirm if the database was created correcly,
@@ -108,6 +108,79 @@ Result:
 
 <br>
 The database and its permissions were configured successfully.
+
+<br>
+
+### Migration Preparation
+
+Here, I configured the wp-config.php file with restricted credentials. I downloaded the application and linked it to the infrastructure. It is baically like building the pipes before turning on the water.
+
+To download and extract Wordpress,
+
+**Commands used:**
+```bash
+cd ~
+```
+The above command retuns one to /home directory on the terminal.
+
+```bash
+wget https://wordpress.org/latest.tar.gz
+```
+The above command downloads the zipped Wordpress application.
+
+```bash
+tar -xzvf lastest.tar.gz
+```
+
+The above command extracts the application. At doing this, a lot of files and folders get returned to you on the terminal. This shows successful download and extraction.
+
+<img width="1276" height="687" alt="wordpress workfiles" src="https://github.com/user-attachments/assets/94a2f60c-37ef-4870-8767-121e80443393" />
+
+
+<br>
+
+To move the files to the  Web Root,
+**Command used:**
+```bash
+sudo cp -a wordpress/. /var/www/html/
+```
+
+After the above command, I had to connect this to the database by configuring the handshake.
+
+**Commands used:**
+```bash
+cd /var/www/html/
+```
+The above command takes one and puts them in the /var/www/html/ directory.
+
+```bash
+sudo cp wp-config-sample.php wp-config.php
+```
+
+The above command copies the wp-config-sample.php file to wp-config.php
+
+To open the wp-config.php file, the nano editor had to be opened in order to edit it and add the correct credentials that link this application to the database.
+
+```bash
+sudo nano wp-config.php
+```
+
+Result:
+
+<img width="1600" height="698" alt="raw nano file" src="https://github.com/user-attachments/assets/1316ba6d-7777-4b75-bb01-3a5f0895d953" />
+
+The modifications I made on the aboce screenshot:
+1. DB_NAME = wordpress_db.
+2. DB_USER = portfolio_admin.
+3. DB_PASSWORD = CyberSecure_99!.
+
+I then exited the nano editor by pressing CTRL + O, Enter, CTRL + X.
+
+
+
+
+
+
 
 
 
