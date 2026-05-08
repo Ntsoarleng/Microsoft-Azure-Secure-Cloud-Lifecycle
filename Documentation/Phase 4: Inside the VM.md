@@ -64,6 +64,54 @@ NOTE: upon accessing the VM's Public IP, the browser correctly flags the connect
 - Root Cause: The server is currently communicating via HTTP (Port 80). Traffic sent over HTTP is unencrypted (plain text), which poses a risk of Man-in-the-middle (MITM) attacks where an adversary could intercept credentials. In this case, no credentials will be required. However, as a best practice, HTTPS must always be used.
 - GRC Perspective: From a compliance standpoint, this is an identified vulnerability. However, since this is still the Development phase and I am using a raw IP Address rather than a registered domain, a trusted SSL/TLS certificate cannot be issued yet. This will all be mitigated as the project progresses.
 
+<br>
+
+### Setting up the Database
+
+Here the MySQL database wordpress_db is provisioned to serve as the centralized repository for all the site metadata. This architectural choice supports Data Persisitence and allows for all site metadata and allows for granular Access Control Management by isolating application data from system-level database tables.
+
+**Command used to crate the database:**
+```bash
+CREATE DATABASE wordpress_db;
+```
+
+Thereafter, I made syntax errors when creating the specific admin user. I fixed this by deleting all the mistakes I could've made and started afresh.
+
+**Command used to create the specific admin user:**
+```bash
+CREATE USER 'portfolio_admin'@'localhost' IDENTIFIED BY 'CyberSecure_99!';
+```
+
+After the previous step, I linked the user to the database with the right permissions.
+
+**Command used:**
+```bash
+GRANT ALL PRIVILEGES ON wordpress_db.* TO 'portfolio_admin'@'localhost';
+```
+
+To save the changes,
+
+**Command used:**
+```bash
+FLUSH PRIVILEGES
+```
+
+To confirm if the database was created correcly,
+
+**Command used:**
+```bash
+SHOW DATABASE;
+```
+
+Result:
+<img width="1275" height="508" alt="sql database" src="https://github.com/user-attachments/assets/26f685ff-e029-4e7a-9d02-05e3e56c1655" />
+
+<br>
+The database and its permissions were configured successfully.
+
+
+
+
 
 
 
