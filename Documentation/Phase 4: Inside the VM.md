@@ -140,7 +140,9 @@ The above command extracts the application. At doing this, a lot of files and fo
 <br>
 
 To move the files to the  Web Root,
+
 **Command used:**
+
 ```bash
 sudo cp -a wordpress/. /var/www/html/
 ```
@@ -148,6 +150,7 @@ sudo cp -a wordpress/. /var/www/html/
 After the above command, I had to connect this to the database by configuring the handshake.
 
 **Commands used:**
+
 ```bash
 cd /var/www/html/
 ```
@@ -168,6 +171,7 @@ sudo nano wp-config.php
 Result:
 
 <img width="1600" height="698" alt="raw nano file" src="https://github.com/user-attachments/assets/1316ba6d-7777-4b75-bb01-3a5f0895d953" />
+<br>
 
 The modifications I made on the aboce screenshot:
 1. DB_NAME = wordpress_db.
