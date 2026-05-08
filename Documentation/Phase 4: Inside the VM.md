@@ -208,13 +208,13 @@ ls -l
 
 <br>
 
-At seeing that the second file that was listed after index.html was index.php, I removed index.html using the command:
+At seeing that the second file listed after index.html was index.php, I removed index.html using the command:
 
 ```bash
 sudo rm /var/www/html/index.html
 ```
 
-This forced the web server to resolve the index.php file and initiate index.php.
+This forced the web server to resolve the index.php file and make it the default.
 
 I restarted apache2 again, and the result was:
 
