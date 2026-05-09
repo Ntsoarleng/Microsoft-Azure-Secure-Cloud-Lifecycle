@@ -54,6 +54,12 @@ In this phase, I will follow a 3 part process: The Export, The Handshake, and Th
 
   <img width="1600" height="443" alt="Screenshot (1066)" src="https://github.com/user-attachments/assets/1679e6da-bba7-4d48-a9be-ec5f098cdaff" />
 
+<br>
+
+Lastly, since I hve finished the migration, I had to verify if it was carried out successfully and what's expected is the result.
+
+I went to the browser, opened a new tab and pasted the virtual machine's IP address.
+
 
     
 
