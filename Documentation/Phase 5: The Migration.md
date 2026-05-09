@@ -11,6 +11,7 @@ In this phase, I will follow a 3 part process: The Export, The Handshake, and Th
 
 1. The Export: I went to the WordPress legacy site and logged in.
    - Went to Tools > Export > All Content > Clicked on Download Export File. A .xml file downloaded on my computer. This file contained every post, page, commnent, amd category I ever made.
+   
 
    <img width="1600" height="753" alt="Screenshot (1058)" src="https://github.com/user-attachments/assets/a4c862d9-b37c-4195-839d-a181fb50ba93" />
    <br>
@@ -48,11 +49,13 @@ In this phase, I will follow a 3 part process: The Export, The Handshake, and Th
 
   <img width="1600" height="563" alt="Screenshot (1065)" src="https://github.com/user-attachments/assets/9c4c890f-e309-439d-977b-1de261490b2b" />
   <br>
-  - Clicked sumbit and it was done.
+  
+  Clicked on submit and it was done.
 
-    <img width="1600" height="443" alt="Screenshot (1066)" src="https://github.com/user-attachments/assets/a099d668-d294-4ea7-bb5d-f4d8d7a12981" />
+  <img width="1600" height="443" alt="Screenshot (1066)" src="https://github.com/user-attachments/assets/1679e6da-bba7-4d48-a9be-ec5f098cdaff" />
 
-    <br>
+
+    
 
 
   
