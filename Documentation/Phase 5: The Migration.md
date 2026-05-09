@@ -11,7 +11,7 @@ In this phase, I will follow a 3 part process: The Export, The Handshake, and Th
 
 1. The Export: I went to the WordPress legacy site and logged in.
    - Went to Tools > Export > All Content > Clicked on Download Export File. A .xml file downloaded on my computer. This file contained every post, page, commnent, amd category I ever made.
-   
+   <br>
 
    <img width="1600" height="753" alt="Screenshot (1058)" src="https://github.com/user-attachments/assets/a4c862d9-b37c-4195-839d-a181fb50ba93" />
    <br>
