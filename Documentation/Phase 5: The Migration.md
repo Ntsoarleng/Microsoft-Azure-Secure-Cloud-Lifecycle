@@ -60,6 +60,41 @@ Lastly, since I hve finished the migration, I had to verify if it was carried ou
 
 I went to the browser, opened a new tab and pasted the virtual machine's IP address.
 
+The result was:
+
+<img width="1559" height="816" alt="wrong wordpress portfolio" src="https://github.com/user-attachments/assets/cb02e81a-50de-4176-8e22-6e541920dba0" />
+
+<br>
+This was not at all my portfolio page, and the theme was also wrong. To try to remediate this, I downloaded the LeanCV theme that I used for my portfolio because there was clearly a mismatch of schema. After downloading the theme, I applied it, and also tried to ensure that data integrity was maintained by going to All pages and making sure that all the migrated content in the .xml file was traslating in this environment. I also deleted all the pages and imported the .xml file again, just to reset everything.
+
+And the result:
+
+<img width="1600" height="722" alt="theme default" src="https://github.com/user-attachments/assets/c790a6f6-2189-42dd-9980-bf859ffaa44f" />
+
+<br>
+
+The default theme was appearing along with the default content on the page. Nothing that belonged to my website portfolio reflected. I then went to the downloaded .xml file and opened it using Notepad:
+
+<img width="1600" height="711" alt="Screenshot (1085)" src="https://github.com/user-attachments/assets/4af3dafd-8abe-46c9-a7d4-50f44cb710a1" />
+
+<br>
+
+The deployment phase encountered a significant Data Integrity hurdle during the migration from the legacy environment to the Azure-hosted WordPressinstance. The primary challenge was a Schema Mismatch within the source XML file; the automated import utility failed to parse the payload because the core content was nested within non-standard metadata tags (<description>, <title>, .etc) rather than the expected body tags (<content:encoded>) as shown in the screenshot above. This resulted in "skeleton pages" that required immediate intervention to prevent data loss.
+
+To remediate this, a surgical Manual Data Recovery strategy was executed. This involved a deep-dive audit of the XML source code to extract fragmented strings and a manual injection of the HTML payload directly into the WordPress application layer. 
+
+<img width="1600" height="778" alt="copy-pasted xml file" src="https://github.com/user-attachments/assets/57992fbf-5edb-458f-b31e-6db4a34f0a10" />
+<br>
+
+By bypassing the faulty automated middleware, the project moved from a failed automated migration to a successful Verified Manual Reconstruction, ensuring that all professional credentials and project details were accurately reflected and localized on the Azure VM storage. 
+
+<img width="1600" height="790" alt="wordpress final result" src="https://github.com/user-attachments/assets/07814d21-6063-4e5d-9ad6-0749ce23f7ac" />
+
+
+
+
+
+
 
     
 
