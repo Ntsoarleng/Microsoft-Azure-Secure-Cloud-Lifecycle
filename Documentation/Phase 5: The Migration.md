@@ -96,6 +96,8 @@ To remediate this, a surgical Manual Data Recovery strategy was executed. This i
 
 By bypassing the faulty automated middleware, the project moved from a failed automated migration to a successful Verified Manual Reconstruction, ensuring that all professional credentials and project details were accurately reflected and localized on the Azure VM storage. 
 
+Proof-of-Concept:
+
 <img width="1600" height="790" alt="wordpress final result" src="https://github.com/user-attachments/assets/07814d21-6063-4e5d-9ad6-0749ce23f7ac" />
 
 
