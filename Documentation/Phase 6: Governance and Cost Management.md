@@ -1,1 +1,1 @@
-## Operational Excellece and Cost Optimization
+## Operational Excellence and Cost Optimization
