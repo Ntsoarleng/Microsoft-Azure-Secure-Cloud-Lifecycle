@@ -80,11 +80,12 @@ The theme appeared along with the default content on the page. Nothing that belo
 
 <br>
 
-The deployment phase encountered a significant Data Integrity hurdle during the migration from the legacy environment to the Azure-hosted WordPressinstance. The primary challenge was a Schema Mismatch within the source XML file; the automated import utility failed to parse the payload because the core content was nested within non-standard metadata tags ("<description>", "<title>", .etc) rather than the expected body tags ("< content:encoded >") as shown in the screenshot above. This resulted in "skeleton pages" that required immediate intervention to prevent data loss.
+The deployment phase encountered a significant Data Integrity hurdle during the migration from the legacy environment to the Azure-hosted WordPressinstance. The primary challenge was a Schema Mismatch within the source XML file; the automated import utility failed to parse the payload because the core content was nested within non-standard metadata tags ("<description >", "<title>", .etc) rather than the expected body tags ("<content:encoded >") as shown in the screenshot above. This resulted in "skeleton pages" that required immediate intervention to prevent data loss.
 
 To remediate this, a surgical Manual Data Recovery strategy was executed. This involved a deep-dive audit of the XML source code to extract fragmented strings and a manual injection of the HTML payload directly into the WordPress application layer. 
 
 <img width="1600" height="778" alt="copy-pasted xml file" src="https://github.com/user-attachments/assets/57992fbf-5edb-458f-b31e-6db4a34f0a10" />
+<br>
 <br>
 
 By bypassing the faulty automated middleware, the project moved from a failed automated migration to a successful Verified Manual Reconstruction, ensuring that all professional credentials and project details were accurately reflected and localized on the Azure VM storage. 
