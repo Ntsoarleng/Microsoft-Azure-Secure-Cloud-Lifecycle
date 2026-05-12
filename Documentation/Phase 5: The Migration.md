@@ -65,19 +65,24 @@ The result was:
 <img width="1559" height="816" alt="wrong wordpress portfolio" src="https://github.com/user-attachments/assets/cb02e81a-50de-4176-8e22-6e541920dba0" />
 
 <br>
+<br>
 This was not at all my portfolio page, and the theme was also wrong. To try to remediate this, I downloaded the LeanCV theme that I used for my portfolio because there was clearly a mismatch of schema. After downloading the theme, I applied it, and also tried to ensure that data integrity was maintained by going to All pages and making sure that all the migrated content in the .xml file was traslating in this environment, but first, I deleted all the pages and imported the .xml file again, just to reset everything.
 
 <br>
+<br>
+
 The result:
 
 <img width="1600" height="722" alt="theme default" src="https://github.com/user-attachments/assets/c790a6f6-2189-42dd-9980-bf859ffaa44f" />
 
+<br>
 <br>
 
 The theme appeared along with the default content on the page. Nothing that belonged to my website portfolio reflected. I then went to the downloaded .xml file and opened it using Notepad:
 
 <img width="1600" height="711" alt="Screenshot (1085)" src="https://github.com/user-attachments/assets/4af3dafd-8abe-46c9-a7d4-50f44cb710a1" />
 
+<br>
 <br>
 
 The deployment phase encountered a significant Data Integrity hurdle during the migration from the legacy environment to the Azure-hosted WordPressinstance. The primary challenge was a Schema Mismatch within the source XML file; the automated import utility failed to parse the payload because the core content was nested within non-standard metadata tags ("<description >", "<title>", .etc) rather than the expected body tags ("<content:encoded >") as shown in the screenshot above. This resulted in "skeleton pages" that required immediate intervention to prevent data loss.
