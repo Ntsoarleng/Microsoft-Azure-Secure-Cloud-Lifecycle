@@ -56,7 +56,7 @@ In this phase, I will follow a 3 part process: The Export, The Handshake, and Th
 
 <br>
 
-Lastly, since I hve finished the migration, I had to verify if it was carried out successfully and what's expected is the result.
+Lastly, after the migration I had to verify that it was carried out successfully and the result was what was expected.
 
 I went to the browser, opened a new tab and pasted the virtual machine's IP address.
 
