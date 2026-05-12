@@ -65,7 +65,7 @@ The result was:
 <img width="1559" height="816" alt="wrong wordpress portfolio" src="https://github.com/user-attachments/assets/cb02e81a-50de-4176-8e22-6e541920dba0" />
 
 <br>
-This was not at all my portfolio page, and the theme was also wrong. To try to remediate this, I downloaded the LeanCV theme that I used for my portfolio because there was clearly a mismatch of schema. After downloading the theme, I applied it, and also tried to ensure that data integrity was maintained by going to All pages and making sure that all the migrated content in the .xml file was traslating in this environment. I also deleted all the pages and imported the .xml file again, just to reset everything.
+This was not at all my portfolio page, and the theme was also wrong. To try to remediate this, I downloaded the LeanCV theme that I used for my portfolio because there was clearly a mismatch of schema. After downloading the theme, I applied it, and also tried to ensure that data integrity was maintained by going to All pages and making sure that all the migrated content in the .xml file was traslating in this environment, but first, I deleted all the pages and imported the .xml file again, just to reset everything.
 
 And the result:
 
