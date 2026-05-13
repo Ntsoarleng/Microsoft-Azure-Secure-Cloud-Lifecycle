@@ -15,7 +15,7 @@ The objectie here was to ensure that the WordPress migration remained within a p
    <img width="1600" height="758" alt="Screenshot (1088)" src="https://github.com/user-attachments/assets/1b948402-aa12-4402-8505-1fe3fc2648c0" />
 
    <br>
-4. After creating the budget, I clicked "Next" to create the alerts. I set an alert for when the resources have consumed 50% of the budget and for when they are approaching 90% of the budget. The alerts will be sent to my through my email address.
+4. After creating the budget, I clicked "Next" to create the alerts. I set an alert for when the resources have consumed 50% of the budget and for when they are approaching 90% of the budget. The alerts will be sent to me through my email address.
    
    <img width="1600" height="758" alt="Screenshot (1089)" src="https://github.com/user-attachments/assets/6381df9b-bae4-49b0-becb-556fcd4b5174" />
 
