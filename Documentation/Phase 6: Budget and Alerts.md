@@ -5,12 +5,12 @@ The objectie here was to ensure that the WordPress migration remained within a p
 ### Configuration details
 
 1. Logged in to the Azure Portal
-2. Navigated to the "Cost Management + Billing" on the left menu and navigated to "Budgets".
+2. Navigated to "Cost Management + Billing" on the left menu and navigated to "Budgets".
    
    <img width="1600" height="750" alt="Screenshot (1087)" src="https://github.com/user-attachments/assets/41cb17b9-26b6-486c-860f-21e195e122d9" />
 
    <br>
-3. I then created the budget, included its name, made it to reset monthly, and set it to $57 as per the suggested burget based on forecast.
+3. I then created the budget, included its name, made it to reset monthly, and set it to $57 as per the suggested budget based on forecast.
    
    <img width="1600" height="758" alt="Screenshot (1088)" src="https://github.com/user-attachments/assets/1b948402-aa12-4402-8505-1fe3fc2648c0" />
 
