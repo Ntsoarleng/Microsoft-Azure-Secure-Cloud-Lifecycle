@@ -17,7 +17,7 @@ This project demonstrates a full birth-to-deletion lifecycle of a cloud asset. M
 
 ## The 7-Phase Execution
 
-- [**Phase 1: Governance and the Safety Net**](#phase-1-governance-and-the-safety-net): Establishing Resource Groups and Administrative Locks.
+- [**Phase 1: Governance and the Safety Net**](documentation/phase-1-governance-and-the-safety-net.md): Establishing Resource Groups and Administrative Locks.
 - **Phase 2: Networking**: Designing the VNET, Subnet, and NSG firewall rules.
 - **Phase 3: Compute (The hardware)**: Configuration and deployment of the Ubuntu Virtual Machine.
 - **Phase 4: Inside the VM**: Installing the LAMP stack and manual MySQL configuratin.
