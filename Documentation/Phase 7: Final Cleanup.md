@@ -7,16 +7,24 @@ This is the part of the project where I prove that resource hygiene is just as i
 
 1. Logged in to the **Azure Portal**.
 2. Searched for **Resource Groups** in the top bar.
+
+   
    <img width="1600" height="388" alt="Screenshot (1093)" src="https://github.com/user-attachments/assets/299e674b-71c4-468a-a027-5ff8941de204" />
 
 <br>
-4. Clicked on the Resource Group I had created for this project: RG-CyberPortfolio-Prod, and clicked on **Delete Resource group**.
+
+3. Clicked on the Resource Group I had created for this project: RG-CyberPortfolio-Prod, and clicked on **Delete Resource group**.
+
+
    <img width="1600" height="542" alt="Screenshot (1094)" src="https://github.com/user-attachments/assets/02dae0bc-e5f8-414b-b58b-645b75b5edef" />
    
    <br>
+   
    <img width="1600" height="713" alt="Screenshot (1096)" src="https://github.com/user-attachments/assets/fe46fbf3-3d2c-4ba2-89f9-cb9fb40c31c2" />
 
    <br>
+   <br>
+   
    One of the security defenses I had enforced kicked back, and that was the lock. The resource group did not delete.
 
    <img width="872" height="233" alt="Screenshot (1097)" src="https://github.com/user-attachments/assets/e4eba35c-30c9-489b-9615-f96e0e328d24" />
@@ -31,11 +39,13 @@ This is the part of the project where I prove that resource hygiene is just as i
 
      <br>
 
-5. I went back to the **Overview** blade and tried to delete the RG-Cyberportfolio-Prod resource group again.
+4. I went back to the **Overview** blade and tried to delete the RG-Cyberportfolio-Prod resource group again.
+
 
    <img width="1600" height="595" alt="Screenshot (1101)" src="https://github.com/user-attachments/assets/f273056b-13c9-46c4-8480-5d26d36a6978" />
 
    <br>
+   
    The resources in the Resource group were successfully deleted.
 
 
