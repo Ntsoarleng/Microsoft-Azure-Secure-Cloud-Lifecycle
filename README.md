@@ -1,4 +1,4 @@
-# Microsoft-Azure: Secure Cloud Lifecycle
+# Microsoft Azure: Secure Cloud Lifecycle
 
 ### A practical IaaS Migration and Security Lab
 
