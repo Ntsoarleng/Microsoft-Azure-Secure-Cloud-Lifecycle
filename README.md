@@ -21,7 +21,7 @@ This project demonstrates a full birth-to-deletion lifecycle of a cloud asset. M
 - **Phase 2: Networking**: Designing the VNET, Subnet, and NSG firewall rules.
 - **Phase 3: Compute (The hardware)**: Configuration and deployment of the Ubuntu Virtual Machine.
 - **Phase 4: Inside the VM**: Installing the LAMP stack and manual MySQL configuratin.
-- **Phase 5: The Migration**: Solving a data integrity loss caused by XML schema mismacth.
+- **Phase 5: The Migration**: Solving a data integrity issue caused by XML schema mismacth.
 - **Phase 6: Budget and Alerts**: Implementing financial guardrails and automated cost alerts.
 - **Phase 7: Final Cleanup**: Secure decommissioning and zero-footprint resource deletion.
 
