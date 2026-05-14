@@ -50,7 +50,7 @@ This is the part of the project where I prove that resource hygiene is just as i
 
    Deleting the entire Resource group wiped out the server, the disks, and the networking in one go. This also means the WordPress account I created is completely gone, as the data lived only on those deleted disks. By clearing everything out, I have ensured that no ghost accounts or hidden costs are left behind., leaving the account 100% clean and secure.
 
-Also, note that the resource groups shown in the first screenshot are default groups created by Azure. They are just sitting there and I had no authorized projects for them. Therefore, to avoid incurring any charges for these unmanaged assets, I went ahead and deleted them as well.
+Also, note that the resource groups shown in the first screenshot are default groups created by Azure. They are just sitting there and I have no authorized projects for them. Therefore, to avoid incurring any charges for these unmanaged assets, I went ahead and deleted them as well.
 
 
 <img width="1600" height="713" alt="Screenshot (1102)" src="https://github.com/user-attachments/assets/18929613-9c44-4b1d-9e1f-f8c148dd8216" />
