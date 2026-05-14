@@ -1,6 +1,6 @@
 ## Resource Decommissioning and Secure Deletion
 
-This is the part of the project where I prove that resource hygiene is just as important as deployment. By performing a clean wipe, I prove that I can manage the full lifecycle of an asset without leaving ghost resources that could lead to security vulnerabilities of unnecessary billing.
+This is the part of the project where I prove that resource hygiene is just as important as deployment. By performing a clean wipe, I prove that I can manage the full lifecycle of an asset without leaving ghost resources that could lead to security vulnerabilities or unnecessary billing.
 
 
 ### Resource Decommissioning Overview:
