@@ -23,9 +23,9 @@ This project demonstrates a full birth-to-deletion lifecycle of a cloud asset. M
 - [**Phase 4: Inside the VM**](https://github.com/Ntsoarleng/Microsoft-Azure-Lab/blob/main/Documentation/Phase%204%3A%20Inside%20the%20VM.md#the-lamp-linux-apache-mysql-php-stack): Installing the LAMP stack and manual MySQL configuratin.
 - [**Phase 5: The Migration**](https://github.com/Ntsoarleng/Microsoft-Azure-Lab/blob/main/Documentation/Phase%205%3A%20The%20Migration.md#data-migration-and-content-integrity): Solving a data integrity issue caused by XML schema mismacth.
 - [**Phase 6: Budget and Alerts**](https://github.com/Ntsoarleng/Microsoft-Azure-Lab/blob/main/Documentation/Phase%206%3A%20Budget%20and%20Alerts.md#operational-excellence-and-cost-management): Implementing financial guardrails and automated cost alerts.
-- **Phase 7: Final Cleanup**: Secure decommissioning and zero-footprint resource deletion.
+- [**Phase 7: Final Cleanup**](https://github.com/Ntsoarleng/Microsoft-Azure-Lab/blob/main/Documentation/Phase%207%3A%20Final%20Cleanup.md#resource-decommissioning-and-secure-deletion): Secure decommissioning and zero-footprint resource deletion.
 
 ## Why this Matters
-- Beyond Fundamentals: Practical application of Azure services in a manual IaaS build.
-- Problem solver: Proven ability to remediate migration errors and database conflicts.
-- Defense oriented: Security was not an afterthought, it was the foundation.
+- **Beyond Fundamentals**: Practical application of Azure services in a manual IaaS build.
+- **Problem solver**: Proven ability to remediate migration errors and database conflicts.
+- **Defense oriented**: Security was not an afterthought, it was the foundation.
