@@ -60,6 +60,7 @@ Also, note that the resource groups shown in the first screenshot are default gr
 <img width="1600" height="715" alt="Screenshot (1103)" src="https://github.com/user-attachments/assets/91131b36-fda7-4d49-b613-3f7cb66370fd" />
 
 <br>
+<br>
 
 There were no longer any resource groups in sight.
 
