@@ -195,7 +195,7 @@ After this, I could then go to the web browser, put the public IP Address of the
 
 <br>
 
-This happened because Apache2 is configured to prioritize index.html over index.php. The default Ubuntu istallation includes a placeholder index.html which took precedence over the WoordPress core files. 
+This happened because Apache2 is configured to prioritize index.html over index.php. The default Ubuntu istallation includes a placeholder index.html which took precedence over the WordPress core files. 
 
 I therefore listed all the files in that directory using the command:
 
