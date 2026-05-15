@@ -7,7 +7,7 @@ Firstly, I checked the IP Address of the Cloud Shell and it was still the same a
 <br>
 
 ### Migration Overview:
-In this phase, I will follow a 3 part process: The Export, The Handshake, and The Import.
+In this phase, I followed a 3 part process: The Export, The Handshake, and The Import.
 
 1. The Export: I went to the WordPress legacy site and logged in.
    - Went to Tools > Export > All Content > Clicked on Download Export File. A .xml file downloaded on my computer. This file contained every post, page, commnent, amd category I ever made.
