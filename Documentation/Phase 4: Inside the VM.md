@@ -172,7 +172,7 @@ Result:
 <img width="1600" height="698" alt="raw nano file" src="https://github.com/user-attachments/assets/1316ba6d-7777-4b75-bb01-3a5f0895d953" />
 <br>
 
-The modifications I made on the aboce screenshot:
+The modifications I made on the above screenshot:
 1. DB_NAME = wordpress_db.
 2. DB_USER = portfolio_admin.
 3. DB_PASSWORD = CyberSecure_99!.
