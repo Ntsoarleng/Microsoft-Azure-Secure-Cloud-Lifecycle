@@ -25,7 +25,7 @@ The objectie here was to ensure that the WordPress migration remained within a p
    <img width="1600" height="761" alt="Screenshot (1090)" src="https://github.com/user-attachments/assets/491e64c8-4f28-4df5-a265-56847e9ef1ec" />
 
    <br>
-Also, there is a real-time cost monitoring dashboard on the homepage of the Azure portal. It shows exactly what my Azure VM and storage have cost me since I started.
+Also, there is a real-time cost monitoring dashboard on the homepage of the Azure portal. It showed exactly what my Azure VM and storage had cost me since I started.
 
 <img width="1600" height="659" alt="Screenshot (1091)" src="https://github.com/user-attachments/assets/a38920f6-8e2c-43ee-8d37-e87919163cb2" />
 
