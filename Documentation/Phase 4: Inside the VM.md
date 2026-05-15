@@ -1,6 +1,6 @@
 ## The LAMP (Linux, Apache, MySQL, PHP) Stack
 
-As already established in Phade 3, whenever a session expires or has not been used for several hourse, Microsoft assigns a new IP Address to one's Azure Cloud Shell. Therefore, before installing the LAMP stack, I needed to get the newly assigned IP address, update the NSG rules, then ssh into the virtual machine.
+As already established in Phade 3, whenever a session expires or has not been used for several hours, Microsoft assigns a new IP Address to one's Azure Cloud Shell. Therefore, before installing the LAMP stack, I needed to get the newly assigned IP address, update the NSG rules, then ssh into the virtual machine.
 
 Getting the IP Address and Updating the NSG rules:
 
