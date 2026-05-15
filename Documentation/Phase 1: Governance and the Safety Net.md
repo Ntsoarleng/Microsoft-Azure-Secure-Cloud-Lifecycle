@@ -8,7 +8,7 @@
 ### Steps to create Resource group:
 1. Logged into an Azure account
 2. Clicked on Azure CLI. Two options were provided: Bash and Powershell. Chose Bash as it was the kernel I am most familiar with.
-3. The command used to create the resource group, name it, choose its region, was:
+3. The command used to create the resource group, name it, and choose its region, was:
 ```bash
 az group create --name RG-CyberPortfolio-Prod --location southafricanorth --tags Project=Portfolio
 ```
