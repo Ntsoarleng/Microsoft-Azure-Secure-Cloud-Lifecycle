@@ -110,7 +110,7 @@ Result showing successful configuration without any errors:
 
 <br>
 
-Because SSH gives one "Root" (total) control over the server, it is the number 1 target for hackers. This is why I only restricted it to my IP address. The /32 restricts it to the provided IP address. If Azure NSG sees a different IP address, it will drop the connection entrirely.
+Because SSH gives one "Root" (total) control over the server, it is the number 1 target for hackers. This is why I only restricted it to my IP address. The /32 restricts it to the provided IP address. If Azure NSG sees a different IP address, it will drop the connection entirely.
 
 In summary, network traffic was segmented into two planes: The data plane (Port 80/443) for public access, and the Management plane (Port 22) for administrative tasks. The management plane was secured via IP-whitelisting to eliminate the attack surface for unauthorized SSH attempts.
 
