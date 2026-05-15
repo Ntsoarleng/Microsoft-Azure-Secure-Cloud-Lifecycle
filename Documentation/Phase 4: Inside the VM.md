@@ -62,8 +62,7 @@ This meant that my Linux server was officially talking to the world!
 
 NOTE: upon accessing the VM's Public IP, the browser correctly flags the connection as "Not Secure".
 - Root Cause: The server is currently communicating via HTTP (Port 80). Traffic sent over HTTP is unencrypted (plain text), which poses a risk of Man-in-the-middle (MITM) attacks where an adversary could intercept credentials. In this case, no credentials will be required. However, as a best practice, HTTPS must always be used.
-- GRC Perspective: From a compliance standpoint, this is an identified vulnerability. However, since this is still the Development phase and I am using a raw IP Address rather than a registered domain, a trusted SSL/TLS certificate cannot be issued yet. This will all be mitigated as the project progresses.
-
+- GRC Perspective: From a compliance standpoint, this is an identified vulnerability. However, since this is still the Development phase and I am using a raw IP Address rather than a registered domain, a trusted SSL/TLS certificate cannot be issued, not needed in this case.
 <br>
 
 ### Setting up the Database
