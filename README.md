@@ -10,7 +10,7 @@ This project demonstrates a full birth-to-deletion lifecycle of a cloud asset. M
 
 - **Model**: Infrastracture as a Service (IaaS)
 - **Cloud**: Microsoft Azure (Virtual Machines, VNETs, NSGs)
-- **Operating Systenm**: Linux (Ubuntu)
+- **Operating System**: Linux (Ubuntu)
 - **App/DB**: WordPress and MySQL
 - **Security**: Resource Locks and Network Security Groups
 - **Governance**: Azure Cost Management and Budgets
