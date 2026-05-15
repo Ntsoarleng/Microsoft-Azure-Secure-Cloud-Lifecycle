@@ -89,7 +89,7 @@ The result to show successful configuration without any error:
 
 Because I explicitly allowed only specific ports, the NSG automatically drops everything else, like hackers trying to scan for open ports.
 
-The reason why both Ports, 80 and 443 were allowed even though I would have only preferred to allow Port 443 for safety reasons; this is to ensure that whenever a user visits my website and they type the address/url of my portfolio in the search bar, a big warning does not appear that may suggest that the website is faulty or broken thus making the user skeptical. Security is great, but user experience (UX) must also be priorotized. 
+The reason why both Ports, 80 and 443 were allowed even though I would have only preferred to allow Port 443 for safety reasons; this is to ensure that whenever a user visits my website and they type the address/url of my portfolio in the search bar, a big warning does not appear that may suggest that the website is faulty or broken thus making the user skeptical. Security is great, but user experience (UX) must also be prioritized. 
 
 By default, browsers try to connect via HTTP (Port 80) first. If Port 80 is closed, an error message appears when a person tries to go to my portfolio, "Site Not Found". When Port 80 is open, the request hits the server and then immediately gets redirected to HTTPS (Port 443). This is where actual communiation happens, and it is secure as its purpose is to ensure encryption and data integrity.
 
